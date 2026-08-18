@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid project</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            background-color: #212121;
+        }
+
+        .container{
+           padding: 20px 50px;
+            display: grid;
+            grid-template-columns: 2.5fr 1.5fr;
+            gap: 20px;
+            height:400px; /* important */
+        }
+        .box1{
+          
+            border-radius: 20px;
+            background-color: #F4EEE5;
+        }
+        .box2{
+            border-radius: 20px;
+            background-color: #004C42;
+        }
+
+        .container2{
+             padding: 10px 50px;
+            display: grid;
+            grid-template-columns: 1.25fr 1.25fr 1.5fr;
+            gap: 20px;
+            height:600px; /* important */
+        }
+        .ex1{
+            display: grid;
+            grid-template-rows:2fr 1.5fr;
+            gap: 20px;
+            border-radius: 20px;
+        
+        }
+        .ex2{
+              display: grid;
+            grid-template-rows:1fr 1.5fr;
+            gap: 20px;
+            border-radius: 20px;
+            
+        }
+        .ex3{
+            border-radius: 20px;
+            background-color: #F4EEE5;
+        }
+
+        .ex1 .box1{
+            border-radius: 20px;
+            background-color: #D60000;
+        }
+        .ex1 .box2{
+            border-radius: 20px;
+            background-color: #F2EFE6 ;
+        }
+        .ex2 .box1{
+            border-radius: 20px;
+            background-color: #F4EEE5;
+        }
+        .ex2 .box2{
+            border-radius: 20px;
+            background-color: #004C42 ;
+        }
+ .container .box1{
+ padding-top: 100px;
+ line-height: 4px;
+ }
+        
+        .container .box1 .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+      
+          
+        }
+        .container .box1 .left p{
+            font-size:100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #004C42;
+          
+        }
+        .container .box1 .left img{
+            height: 70px;
+        }
+
+        .container .box2{
+              overflow: hidden;
+              position: relative;
+        }
+
+        .container .box2 img{
+    width: 280px;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+           
+            
+        }
+
+        .container2 .ex1 {
+            overflow: hidden;
+            
+        }
+
+        .container2 .ex1 .box1, .container2 .ex1 .box2{
+            position: relative;
+        }
+
+        
+        .container2 .ex1 .box1 img{
+            width: 220px;
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+        }
+
+        .container2 .ex1 .box2 img{
+            width: 220px;
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+        }
+
+        .container2 .ex2{
+            overflow: hidden;
+        }
+        .container2 .ex2 .box1{
+position: relative;
+        }
+
+        .container2 .ex2 .box1 img{
+            width: 100px;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            transform: translate(-40%, -25%);
+        }
+
+        .container2 .ex2 .box1 p{
+            font-size: 70px;
+             position: absolute;
+            top: 55%;
+            left: 65%;
+            transform: translate(-55%, -65%);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #FB0304;
+        }
+
+         .container2 .ex2 .box2{
+            overflow: hidden;
+         }
+         .container2 .ex3{
+            overflow: hidden;
+            
+         }
+         .container2 .ex3 img{
+           width: 100%;
+
+         }
+         .container2 .ex2 .box2 img{
+            width: 100%;
+         }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="left">
+                <p>better</p>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/044/620/068/small/cartoon-wedding-couple-on-transparent-background-png.png" alt="">
+            </div>
+            <div class="left">
+                <p>now</p>
+                <img src="https://png.pngtree.com/png-vector/20230912/ourmid/pngtree-cute-black-in-love-couple-png-image_10023144.png" alt="">
+                <p>closer</p>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="https://i.pinimg.com/1200x/75/6e/41/756e414c885aec3ac4cca95af4991a0b.jpg" alt="">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="ex1">
+            <div class="box1">
+                <img src="https://i.pinimg.com/736x/a2/19/4f/a2194f65a318c5de32470affecc64064.jpg" alt="">
+            </div>
+            <div class="box2">
+                <img src="https://elfsight.com/wp-content/uploads/2019/03/whatsapp-chat.png" alt="">
+            </div>
+        </div>
+        <div class="ex2">
+            <div class="box1">
+                <img src="./sync-logo.png" alt="">
+                <p>Sync</p>
+            </div>
+            <div class="box2">
+                <img src="https://i.pinimg.com/1200x/75/ad/dd/75addd713a034bc0ac24af99967719e5.jpg" alt="">
+            </div>
+        </div>
+        <div class="ex3">
+            <img src="https://i.pinimg.com/736x/e1/e9/72/e1e9721cea56d9da57595f466db974f8.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
