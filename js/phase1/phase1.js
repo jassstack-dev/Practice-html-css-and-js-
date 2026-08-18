@@ -269,6 +269,369 @@
 // console.log(`My name is Aman and I am 20 years old`)
 
 
+// Numbers & Math
+
+// 1. Round `4.7` using `Math.round()`.
+// 2. Find the square root of 81.
+// 3. Find the maximum number from `10, 20, 5, 99`.
+// 4. Generate a random number between 1 and 10.
+// 5. Convert `"99.99"` into an integer.
+// 6. Check whether `25` is an integer or not.
+// 7. Use `toFixed(2)` on `3.141592`.
+
+// console.log(Math.round(4.7))
+// console.log(Math.sqrt(81))
+// console.log(Math.max(10,20,5,99))
+// console.log(Math.random()) 
+
+// Math.floor(Math.random() * (max - min + 1)) + min
+
+// let num = Math.floor(Math.random() * 10) + 1;
+
+// console.log(num);
+
+// Convert `"99.99"` into an integer.
+
+
+// console.log(parseInt(99.99))
+// let num = Number.isInteger(25)
+// console.log(num)
+
+
+// Use `toFixed(2)` on `3.141592`.
+
+// let num = 3.141592
+// console.log(num.toFixed(2))
+
+
+
+// ## Conditionals
+
+// 1. Check whether a number is positive or negative.
+// 2. Check whether a number is even or odd.
+// 3. Check whether a person is eligible to vote.
+// 4. Find the largest among two numbers.
+// 5. Find the largest among three numbers.
+// 6. Check whether a year is a leap year.
+// 7. Check whether a number is divisible by both 3 and 5.
+// 8. Create a simple grading system:
+// - 90+ → A
+// - 75+ → B
+// - 50+ → C
+// - below 50 → Fail
+// 1. Check whether a character is a vowel or consonant.
+// 2. Create a calculator using `switch` statement.
+// 3. Print the day name based on a number (1–7).
+// 4. Check whether a username is `"admin"` and password is `"1234"`.
+
+
+
+// 1. Check whether a number is positive or negative.
+// let num = prompt("enter the number:")
+
+// if(num >0){
+//     console.log("positive")
+// }else{
+//     console.log("negative")
+// }
+
+
+
+// 2. Check whether a number is even or odd.
+// if(num%2 === 0){
+//     console.log("number is even")
+// }else{
+//     console.log("number is odd")
+// }
+
+// Check whether a person is eligible to vote.
+
+// let age = prompt('enter your age ')
+
+// if(age >=18){
+//     console.log('you are eligible for vote')
+// }else{
+//     console.log('sorry ! you are not eligible for vote')
+// }
+    
+
+// 4. Find the largest among two numbers.
+
+// let num1 = prompt("enter the first number")
+// let num2 = prompt("enter the second number")
+
+// if(num1 > num2){
+//     console.log("first is greater then seconds")
+// }else{
+//     console.log("second is greater then first")
+// }
+
+
+// Find the largest among three numbers.
+
+// let num1 = prompt("enter the first number")
+// let num2 = prompt("enter the second number")
+// let num3 = prompt('enter the third number')
+
+// if(num1 > num2 && num1 > num3){
+//     console.log('first number is greater then second and third')
+// }else if(num2 > num1 && num2 > num3){
+//     console.log("second number is greater than first and third")
+// }
+// else if(num3 > num1 && num3 >num2){
+//     console.log("third number is greater than first and second")
+// }
+// else if(num1 === num2 && num1 === num3){
+//     console.log("all no are equal")
+// }
+
+
+// Check whether a year is a leap year.
+
+// let year = prompt('enter the year')
+
+// if(year%400 === 0 || (year%4 === 0 && year%100 != 0)){
+//     console.log(`${year} is the leap year`)
+// }else{
+//     console.log(`${year} is not the leap year`)
+// }
+
+
+
+// Check whether a number is divisible by both 3 and 5.
+
+// let num1 = prompt("enter the first no")
+
+
+// if(num1 % 3 === 0 && num1 % 5 === 0){
+//     console.log("num is divisible by 3 and 5 both")
+// }else{
+//     console.log("num is not divisible by both")
+// }
+
+//  90+ → A
+// - 75+ → B
+// - 50+ → C
+// - below 50 → Fail
+
+// let marks = Number(prompt("Enter the marks"));
+
+// if (marks > 100 || marks < 0) {
+//     console.log("Marks should be between 0 and 100");
+// }
+// else if (marks >= 90 && marks <= 100) {
+//     console.log("Grade A");
+// }
+// else if (marks >= 75 && marks < 90) {
+//     console.log("Grade B");
+// }
+// else if (marks >= 50 && marks < 75) {
+//     console.log("Grade C");
+// }
+// else {
+//     console.log("Fail");
+// }
+
+
+// Check whether a character is a vowel or consonant.
+
+// let char = prompt("enter the char").toLowerCase();
+
+// let vowels = ["a", "e", "i", "o","u"]
+
+// if(vowels.includes(char)){
+// console.log("vowels")
+// }else{
+//     console.log("consonent")
+// }
+
+
+// Create a calculator using `switch` statement.
+
+
+
+// let num1 = Number(prompt("num1"));
+// let num2 = Number(prompt("num2"));
+// let operator = prompt("operator");
+// switch (operator) {
+//     case "+":
+//         console.log(num1+num2)
+//         break;
+
+//     case "-":
+//         console.log(num1-num2)
+//         break;
+
+//     case "*":
+//         console.log(num1*num2)
+//         break;
+
+//     case "/":
+//         console.log(num1/num2)
+//         break;
+
+//     default:
+//         console.log("invalid operator")
+// }
+
+
+//  Print the day name based on a number (1–7).
+
+// let num = Number(prompt('enter num between 1 to 7'))
+
+// switch(num){
+//     case 1:
+//         console.log("Sunday")
+//         break;
+//     case 2:
+//         console.log("Monday")
+//         break;
+//     case 3:
+//         console.log("Tuesday")
+//         break;
+//     case 4:
+//         console.log("Wednesday")
+//         break;
+//     case 5:
+//         console.log("Thursday")
+//         break;
+//     case 6:
+//         console.log("Friday")
+//         break;
+//     case 7:
+//         console.log("Saturday")
+//         break;
+
+//     default:
+//         console.log("invalid no")
+// }
+
+
+//  Check whether a username is `"admin"` and password is `"1234"`.
+
+// let name = prompt('enter the name')
+// let password =(prompt("enter the 4 digit password"))
+
+// if(name === "admin" && password === "1234"){
+//     console.log("welcome to the Admin Dashboard")
+// }else{
+//     console.log("welcome to the user dashboard")
+// }
+
+
+// ## Truthy & Falsy
+
+// 1. Check whether an empty string is truthy or falsy.
+// 2. Check whether `0` is truthy or falsy.
+// 3. Check whether `[]` is truthy or falsy.
+// 4. Create a variable and print `"Valid"` if it has a value otherwise print `"Invalid"`.
+
+// . Check whether an empty string is truthy or falsy.
+// let str = ""
+
+// if(str){
+//     console.log(true)
+// }else{
+//     console.log(false)
+// }
+
+
+// 2. Check whether `0` is truthy or falsy.
+// let num = 0
+
+// if(num){
+//     console.log(true)
+// }else{
+//     console.log(false)
+// }
+
+//  Check whether `[]` is truthy or falsy.
+// let arr = []
+
+// if(arr){
+//     console.log(true)
+// }
+// else{
+//     console.log(false)
+// }
+
+// Create a variable and print `"Valid"` if it has a value otherwise print `"Invalid"`.
+
+// let variable = prompt("enter the Value")
+
+// if(variable){
+//     console.log("valid")
+// }else{
+//     console.log("invalid")
+// }
+
+
+// ternary Operator
+
+// condition ? valueIfTrue : valueIfFalse
+
+// Check whether a number is even or odd using ternary operator.
+
+// let num = 11;
+
+// num % 2 === 0 ? console.log("even") : console.log("odd")
+
+
+// Check whether age is above 18 using ternary operator.
+
+// let age = prompt("enter the age")
+
+// age >=18 ? console.log(`${age} is greater than or equal to 18`) : console.log(`${age} is less than  18`)
+
+
+// Find the greater number between two values using ternary operator.
+
+// let a = prompt('a')
+// let b = prompt('b')
+
+// a>b ? console.log(`${a} is greater than ${b}`): console.log(`${a} is less than ${b}`)
+
+
+// ## Mixed Practice Questions
+
+// 1. Create a mini biodata program using variables and template literals.
+// 2. Calculate the area of a rectangle.
+// 3. Calculate the simple interest.
+// 4. Convert temperature from Celsius to Fahrenheit.
+// 5. Convert kilometers into meters.
+// 6. Calculate total marks and percentage of 5 subjects.
+// 7. Calculate electricity bill based on units consumed.
+// 8. Create a username generator using first name and birth year.
+// 9. Check whether a string starts with a specific letter.
+// 10. Count the total characters in a sentence excluding spaces
+
+
+// 1. Create a mini biodata program using variables and template literals.
+
+// let name = prompt('Enter the name ')
+// let age = Number(prompt("enter the age"))
+
+// console.log(`your name is ${name} and your age is ${age}`)
+
+
+//  Calculate the area of a rectangle.
+
+// let length = prompt("length")
+// let breadth = prompt("breadth")
+
+// console.log(`Area of reactangle of length ${length} and breadth ${breadth} is`, length*breadth)
+
+
+//  Calculate the simple interest.
+
+let p = prompt("enter the principal")
+let r = prompt("enter the rate of interest")
+let t = prompt("enter the time")
+
+let si = (p*r*t)/100;
+
+console.log('simple intrest is:', si)
+
 
 
 
