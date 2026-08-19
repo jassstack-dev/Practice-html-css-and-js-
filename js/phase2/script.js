@@ -164,3 +164,236 @@ console.log(palindrome("aaaa"))
 
 // Write a callback function example using setTimeout.
 
+let fun = ()=>{
+    console.log("bhai chalade ise")
+}
+
+setTimeout(fun,5000)
+
+// Create a higher-order function that executes another function twice.
+
+function firstFunction(){
+    console.log("first function run")
+}
+
+function anothetFunction(f){
+    f()
+    f()
+}
+
+anothetFunction(firstFunction)
+
+
+// Write a function that returns another function.
+
+function vimal() {
+    function another() {
+        return "second function";
+    }
+
+    return another;
+}
+
+let result = vimal();
+
+console.log(result());
+
+
+// Create a pure function for subtraction.
+
+function subtraction(a,b){
+    return a-b;
+}
+
+console.log(subtraction(14,20))
+
+
+// Create an impure function using global variable modification.
+
+let total = 0;
+function tota(){
+   return total += 5;
+    
+}
+
+console.log(tota())
+
+// ==========================================================================================
+
+
+// Part 2 — Advanced Functions (21–35)
+
+// Write a recursive function for factorial.
+function factorial(n){
+    if(n === 1){
+        return  1;
+    }
+
+    return n * (factorial(n-1));
+
+}
+
+console.log(factorial(10));
+
+// 
+
+
+
+
+// Create an IIFE that prints "Executed".
+
+(function abcd() {
+   console.log("Executed")
+})();
+
+// Explain output:
+function test() {
+    return;
+    console.log("Hello");
+}
+console.log(test());  // undefined
+
+
+// Create custom implementation of map.
+
+
+
+function custom(){
+    let arr = [10,20,30]
+    let newArr = [];
+    for (let value  of arr){
+        newArr.push(value *2)
+    }
+return newArr;
+}
+console.log(custom())
+
+// Create custom implementation of filter.
+
+function filter(arr){
+    let  newArr = []
+
+    for(let val of arr ){
+        if(val >=20){
+            newArr.push(val)
+        }
+    }
+    return newArr
+}
+
+console.log(filter([20,30,4,302]))
+
+
+// Create custom implementation of reduce.
+
+function reduce(arr){
+
+    newVal = 0;
+
+    for(let val of arr){
+        newVal += val;
+    }
+
+    return newVal
+
+}
+
+console.log(reduce([10,20,30]))
+
+// Create custom forEach.
+
+function foreach(arr){
+    
+    for(let val of arr){
+        console.log(val)
+    }
+    return 'bhqai sdone hai '
+}
+
+console.log("forEach:")
+console.log(foreach([10,20,30]))
+
+
+// # Part 3 — Arrays Basics (36–55)
+
+// ## Beginner
+
+// 1. Create an array of 5 fruits.
+// 2. Print first and last element of array.
+// 3. Find length of array.
+// 4. Add element at end using `push`.
+// 5. Remove last element using `pop`.
+// 6. Add element at beginning using `unshift`.
+// 7. Remove first element using `shift`.
+// 8. Reverse an array.
+// 9. Sort numbers ascending.
+// 10. Sort numbers descending.
+
+
+// 1. Create an array of 5 fruits.
+let fruit = ["apple", "banana", "papaya", "orange", "guava"]
+console.log(fruit)
+
+// Print first and last element of array.
+console.log(fruit[0])
+console.log(fruit[fruit.length-1])
+
+
+// Find length of array.
+console.log(fruit.length)
+
+// add element at end using `push`.
+fruit.push("grapes")
+console.log(fruit)
+
+// Remove last element using `pop`.
+fruit.pop()
+console.log(fruit)
+
+// Add element at beginning using `unshift`.
+fruit.unshift("grapes")
+console.log(fruit)
+
+// Remove first element using `shift`.
+fruit.shift()
+console.log(fruit)
+
+// 8. Reverse an array.
+console.log(fruit.reverse())
+// 9. Sort numbers ascending.
+
+let num =  [10,20,30,40,49]
+
+console.log(num.sort((a,b)=> a-b))
+// 10. Sort numbers descending.
+console.log(num.sort((a,b)=> b-a))
+
+
+// ## Intermediate
+
+// ## Intermediate
+
+// 1. Use `splice` to remove elements.
+let arr = [1, 2, 3, 4, 5];
+
+arr.splice(1,2)
+console.log(arr)
+// 2. Use `splice` to insert elements.
+arr.splice(2,0,5)
+console.log(arr)
+// 3. Use `slice` to copy array.
+let veg = ["aloo", "tamatar", "samosa", "chai", "ghee"]
+let veg2 = veg.slice(1,3)
+console.log(veg)
+console.log(veg2)
+// 4. Find index of an element.
+
+
+// 5. Check if array contains a value.
+// 6. Join array elements with .
+// 7. Merge two arrays using spread operator.
+// 8. Copy array using spread operator.
+// 9. Find maximum value using `Math.max`.
+// 10. Swap two variables using destructuring.
+
+
