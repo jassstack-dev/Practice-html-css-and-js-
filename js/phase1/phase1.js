@@ -543,3 +543,31 @@ let gst = 18;
 let finalBill = bill + (bill * gst/100 )
 
 console.log(finalBill)
+
+// Generate a random OTP of 4 digits.
+
+console.log(Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000)
+
+// Reverse a 3-letter string manually.
+
+let word = "cat"
+
+let Reverse = word[2] + word[1] + word[0]
+console.log(Reverse)
+
+// Find the last character of a string.
+
+let char = "vimal"
+
+console.log(char[char.length -1])
+
+// Convert a full name into uppercase initials.
+
+console.log(char.toUpperCase()) 
+
+// Check whether two strings are equal ignoring case sensitivity.
+
+let str1 = "VIMLA"
+let str2 = "vimla"
+
+console.log(str1.toLocaleLowerCase() === str2.toLocaleLowerCase())
